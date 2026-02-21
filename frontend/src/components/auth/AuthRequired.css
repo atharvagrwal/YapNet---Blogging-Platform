@@ -1,0 +1,40 @@
+.auth-required {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.auth-required h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.auth-required p {
+  color: #666;
+  text-align: center;
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+
+.auth-required button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.auth-required button:hover {
+  background-color: #0056b3;
+}
+
+.auth-required button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

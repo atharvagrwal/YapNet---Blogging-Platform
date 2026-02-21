@@ -1,0 +1,144 @@
+.my-posts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.my-posts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.my-posts-header h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.no-posts {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+}
+
+.no-posts-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.no-posts-icon {
+  font-size: 4rem;
+  color: var(--text-muted);
+}
+
+.no-posts h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.no-posts p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.posts-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.posts-summary {
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.posts-summary p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .my-posts-container {
+    padding: var(--spacing-md);
+  }
+
+  .my-posts-header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .my-posts-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .no-posts {
+    padding: var(--spacing-xl);
+  }
+
+  .no-posts-icon {
+    font-size: 3rem;
+  }
+
+  .no-posts h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-posts-container {
+    padding: var(--spacing-sm);
+  }
+
+  .my-posts-header {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+  }
+
+  .my-posts-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .no-posts {
+    padding: var(--spacing-lg);
+  }
+
+  .no-posts-icon {
+    font-size: 2.5rem;
+  }
+
+  .no-posts h3 {
+    font-size: 1.125rem;
+  }
+
+  .posts-summary {
+    padding: var(--spacing-md);
+  }
+} 
